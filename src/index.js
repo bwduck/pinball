@@ -226,7 +226,7 @@ const createCircles = specs => {
 
 createPaddle(230, 600, LEFT, 37, "left");
 createPaddle(370, 600, RIGHT, 39, "right");
-const ball = Bodies.circle(300, 100, 20, {
+const ball = Bodies.circle(250, 100, 20, {
   inertia: 1000,
   friction: 0,
   label: "pinball"

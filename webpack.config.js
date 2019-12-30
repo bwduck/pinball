@@ -19,6 +19,5 @@ module.exports = {
   },
   devServer: {
     contentBase: "./dist"
-  },
-  watch: true
+  }
 };

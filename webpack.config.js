@@ -11,7 +11,9 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CopyPlugin([{ from: "src", test: "index.html", to: "dist" }])],
+  plugins: [
+    new CopyPlugin([{ from: "src/static", test: "index.html", to: "" }])
+  ],
   resolve: {
     extensions: ["*", ".js"]
   },

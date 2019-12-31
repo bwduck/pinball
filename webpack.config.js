@@ -1,3 +1,5 @@
+const CopyPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   entry: "./src/index.js",
   module: {
@@ -9,6 +11,7 @@ module.exports = {
       }
     ]
   },
+  plugins: [new CopyPlugin([{ from: "src", test: "index.html", to: "dist" }])],
   resolve: {
     extensions: ["*", ".js"]
   },
